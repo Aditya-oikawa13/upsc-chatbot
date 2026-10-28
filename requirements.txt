@@ -3,9 +3,6 @@
 pdfplumber==0.11.10
 PyMuPDF==1.28.2
 pillow==12.3.0
-# NOTE: Tesseract (`brew install tesseract tesseract-lang`) was evaluated as
-# the OCR engine and works, but extraction ended up using Gemini instead —
-# see PLAN.md §3. pytesseract is no longer a dependency of this project.
 
 # Local structured + vector storage
 chromadb==1.5.9

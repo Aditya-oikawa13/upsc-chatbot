@@ -12,3 +12,8 @@ logs/
 # All data stays local: PDFs, extracted questions, SQLite DB, vector store.
 # Only the code is published; without the data nobody can get answers from it.
 data/
+
+# Local-only notes and lockfile
+*.md
+!README.md
+requirements-lock.txt
