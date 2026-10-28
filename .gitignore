@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+logs/
+
+# Agent tooling (local only)
+.claude/
+.agents/
+
+# All data stays local: PDFs, extracted questions, SQLite DB, vector store.
+# Only the code is published; without the data nobody can get answers from it.
+data/
