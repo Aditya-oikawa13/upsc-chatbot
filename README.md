@@ -35,7 +35,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 gcloud auth application-default login
-cp .env.example .env   # then set GCP_PROJECT to your own project ID
+echo 'GCP_PROJECT=your-gcp-project-id' > .env   # optional: GCP_LOCATION, EMBEDDING_MODEL, REASONING_MODEL
 ```
 
 ## Bring your own data

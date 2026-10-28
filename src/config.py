@@ -1,6 +1,6 @@
 """Central configuration for the UPSC PYQ chatbot project.
 
-Values are read from environment variables (see .env.example) with sensible
+Values are read from environment variables with sensible
 defaults. All data — raw PDFs, the SQLite metadata store, and the Chroma
 vector index — lives under DATA_DIR on the local machine. Google Cloud
 (Vertex AI) is used only for embeddings and, later, the agent's reasoning
@@ -19,7 +19,7 @@ load_dotenv()
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # --- Google Cloud / Vertex AI ---
-GCP_PROJECT = os.environ["GCP_PROJECT"]  # set in .env (see .env.example)
+GCP_PROJECT = os.environ["GCP_PROJECT"]  # set in .env
 GCP_LOCATION = os.getenv("GCP_LOCATION", "us-central1")
 
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-005")
